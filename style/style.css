@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2d3250;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #424769;
+border-bottom: 2px solid #f9b17a;
+}
+
+.row {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #676f9d;
+    border-radius: 10px;
+    gap: 25px;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h5,
+p {
+    font-size: 24px;
+    color: #fff;
+}
+label {
+    color: #fff;
+}
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+.submit {
+    padding: 5px 15px;
+    border: none;
+    margin-left: 15px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #f9b17a;
+}
+
+.submit:hover {
+    background-color: #676f9d;
+    transition: 0.5s;
+}
+
+.searchinput {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #676f9d;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.searchinput::placeholder{
+    color: #fff;
+}
+
+.btn-wrapper {
+    margin-top: 15px;
+}
+
+.card-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 50px;
+    border: 1px solid #f9b17a;
+    padding: 20px 15px;
+    background-color: #424769;
+    border-radius: 15px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-box p {
+    font-weight: 600;
+}
+
+.card-box span {
+    font-weight: 200;
+}
+
+.hidden {
+    display: none;
+}
