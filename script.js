@@ -2,7 +2,7 @@ const row = document.querySelector('.row')
 const all = document.querySelector('#all')
 const search = document.querySelector('#search')
 const searchBox = document.querySelector('.search-wrapper')
-const searchInput = document.querySelector('#searchinput')
+const searchInput = document.querySelector('#searchInput')
 const submit = document.querySelector('#submit')
 const name = document.querySelector('#name')
 const valut = document.querySelector('#valut')
@@ -56,12 +56,11 @@ search.addEventListener('change', () => {
 
 submit.addEventListener('click', () => {
     let value = searchInput.value
-    fetch(`https://restcountries.com/v3.1/all${value}`)
+    fetch(`https://restcountries.com/v3.1/name/${value}`)
         .then(res => res.json())
         .then(json => {
             console.log(json)
-            valut.innerHTML = Object.values(json[0].currencies).map(el => el.name)
-            name.innerHTML = json[0].translations.rus.common
+            valut.innerHTML = Object.values(json[0].currencies).map(el => el.name)           
             capital.innerHTML = json[0].capital
             symbol.innerHTML = Object.values(json[0].currencies).map(el => el.symbol)
             flag.src = json[0].flags.png
@@ -80,10 +79,4 @@ submit.addEventListener('click', () => {
                     text1.innerHTML = json.current.condition.text
                 })
         })
-})
-searchInput.addEventListener('keypress', () => {
-    if (event.key === 'Enter') {
-        event.preventDefault()
-        submit.click()
-    }
 })
