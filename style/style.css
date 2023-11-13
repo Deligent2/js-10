@@ -110,8 +110,9 @@ h3 {
     background-color: #676f9d;
     outline: none;
     border: none;
-    color: #fff;
+   
 }
+
 .searchinput::placeholder{
     color: #fff;
 }

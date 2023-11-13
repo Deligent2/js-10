@@ -72,7 +72,7 @@ submit.addEventListener('click', () => {
 
 
             let values1 = json[0].capital[0]
-            fetch(`http://api.weatherapi.com/v1/current.json?key=82b0db98f6ea4728b0860820230811&q=${values1}`)
+            fetch(`http://api.weatherapi.com/v1/current.json?key=4b9538e90e4c4ee49d860744230811&q=${values1}`)
                 .then(data => data.json())
                 .then(json => {
                     console.log(json)
