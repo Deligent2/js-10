@@ -96,11 +96,12 @@ h3 {
     cursor: pointer;
     font-size: 14px;
     background-color: #f9b17a;
+    transition: 0.6s;
 }
 
 .submit:hover {
     background-color: #676f9d;
-    transition: 0.5s;
+   
 }
 
 .searchinput {
@@ -125,10 +126,15 @@ h3 {
     flex-direction: column;
    
     gap: 50px;
-    border: 1px solid #f9b17a;
     padding: 20px 15px;
     background-color: #424769;
     border-radius: 15px;
+    transition: 0.8s;
+}
+
+.card-box:hover {
+    border: 2px solid #f9b17a;
+
 }
 
 .subtitle {
